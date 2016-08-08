@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Router protected with the middleware web.
+ * Routes protected with the middleware web.
  */
 Route::group(['middleware' => ['web']], function(){
 
@@ -16,7 +16,7 @@ Route::group(['middleware' => ['web']], function(){
 });
 
 
-// Routes with our protection of the middleware,
+// Routes without protection of the middleware,
 // Since the request comes from the camera of the smartphone.
 
 Route::group(['middleware' => ['auth.basic']], function(){
